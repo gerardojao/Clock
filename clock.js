@@ -1,3 +1,9 @@
+cohort = await document.interestCohort();
+url = new URL("https://ads.example/getCreative");
+url.searchParams.append("cohort", cohort);
+creative = await fetch(url);
+
+
 const weekDay = document.getElementById("weekDay")
 const monthDay = document.getElementById("monthDay")
 const month = document.getElementById("month")
